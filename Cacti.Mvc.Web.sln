@@ -12,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{31BF27
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cacti.Mvc.Web.Test", "Cacti.Mvc.Web.Test\Cacti.Mvc.Web.Test.csproj", "{B1FC0109-44D7-4EF2-8EAD-A19F8C54D7EE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cacti.Mvc.Web.Test", "test\Cacti.Mvc.Web.Test.csproj", "{B1FC0109-44D7-4EF2-8EAD-A19F8C54D7EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
