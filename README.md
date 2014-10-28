@@ -7,7 +7,7 @@ A set of common use extensions, filters and helpers for asp.net MVC
 Installation
 ------------
 
-    Install-Package Cacti.Web.Mvc
+    Install-Package Cacti.Mvc.Web
 
 HTML helpers
 ------------
