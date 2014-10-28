@@ -9,6 +9,14 @@ Installation
 
     Install-Package Cacti.Mvc.Web
 
+To avoid importing namespaces in your views add **Cacti.Mvc.Web** to your Views/Web.config
+```xml
+<system.web.webPages.razor>
+   <namespaces>
+      <add namespace="Cacti.Mvc.Web"/>
+   </namespaces>
+</system.web.webPages.razor>
+```
 HTML helpers
 ------------
 * DropDownGroupFor
