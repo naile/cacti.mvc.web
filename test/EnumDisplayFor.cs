@@ -52,7 +52,7 @@ namespace Cacti.Mvc.Web.Test
 
         #endregion
 
-        private enum MyEnum
+        private enum MyEnumWithDisplayName
         {
             [Display(Name = "My Foo")]
             Foo = 1,
@@ -60,30 +60,58 @@ namespace Cacti.Mvc.Web.Test
             Bar = 2
         }
 
+        private enum MyEnumWithoutDisplayName
+        {
+            Hello = 10,
+            ByeBye = 3
+        }
+
         private class MyModel
         {
-            public MyEnum MyEnum { get; set; }
+            public MyEnumWithDisplayName DisplayNameEnum { get; set; }
+            public MyEnumWithoutDisplayName VanillaEnum { get; set; }
         }
 
         [TestMethod]
-        public void MyEnum_Foo_Returns_My_Foo_DisplayString()
+        public void Enum_With_DisplayName_Returns_Enum_DisplayName()
         {
-            var value = MyEnum.Foo.DisplayFor();
+            var value = MyEnumWithDisplayName.Foo.DisplayFor();
             Assert.AreEqual("My Foo", value);
         }
+        
+        [TestMethod]
+        public void Enum_Without_DisplayName_Returns_Enum_Name()
+        {
+            var value = MyEnumWithoutDisplayName.Hello.DisplayFor();
+            Assert.AreEqual("Hello", value);
+        }
 
         [TestMethod]
-        public void DisplayFor_Enum_Extension_Returns_My_Bar_DisplayName_As_IHtmlString()
+        public void Enum_With_DisplayName_Returns_DisplayName_As_IHtmlString()
         {
             var model = new MyModel
             {
-                MyEnum = MyEnum.Bar
+                DisplayNameEnum = MyEnumWithDisplayName.Bar
             };
 
             var helper = CreateHtmlHelper(model);
-            var value = helper.DisplayEnumFor(m => m.MyEnum);
+            var value = helper.DisplayEnumFor(m => m.DisplayNameEnum);
 
             Assert.AreEqual("My Bar", value.ToHtmlString());
+        }
+
+        [TestMethod]
+        public void Enum_Without_DisplayName_Returns_Name_As_IHtmlString()
+        {
+            var model = new MyModel
+            {
+                VanillaEnum = MyEnumWithoutDisplayName.ByeBye
+            };
+
+            var helper = CreateHtmlHelper(model);
+            var value = helper.DisplayEnumFor(m => m.VanillaEnum);
+
+            Assert.AreEqual("ByeBye", value.ToHtmlString());
         }
     }
 }
