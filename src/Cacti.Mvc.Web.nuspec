@@ -11,7 +11,7 @@
     <!--<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>Initial release.</releaseNotes>
+    <releaseNotes>Simplifed namespaces. Added common javascript/unix datetime extensions</releaseNotes>
     <copyright>Copyright 2014</copyright>
     <tags>ASP.NET MVC extensions</tags>
 	<dependencies>
