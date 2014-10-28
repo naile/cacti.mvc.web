@@ -11,7 +11,7 @@
     <!--<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>Added NotEqual route constraint</releaseNotes>
+    <releaseNotes>More extensions!</releaseNotes>
     <copyright>Copyright 2014</copyright>
     <tags>ASP.NET MVC extensions</tags>
 	<dependencies>
