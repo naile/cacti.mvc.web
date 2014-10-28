@@ -3,8 +3,7 @@ using System.Security.Permissions;
 using System.Web;
 using System.Web.Mvc;
 
-
-namespace Cacti.Mvc.Web.Attribute
+namespace Cacti.Mvc.Web
 {
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, Inherited = true, AllowMultiple = false)]
     [AspNetHostingPermission(SecurityAction.Demand, Level = AspNetHostingPermissionLevel.Minimal)]

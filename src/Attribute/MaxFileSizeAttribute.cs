@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.Web;
 
-namespace Cacti.Mvc.Web.Attribute
+namespace Cacti.Mvc.Web
 {
     public class MaxFileSizeAttribute : ValidationAttribute
     {

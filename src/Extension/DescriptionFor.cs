@@ -3,7 +3,7 @@ using System.Linq.Expressions;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Cacti.Mvc.Web.Extension
+namespace Cacti.Mvc.Web
 {
     public static class DescriptionForExtension
     {

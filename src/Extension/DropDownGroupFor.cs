@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Mvc.Html;
 
-namespace Cacti.Mvc.Web.Extension
+namespace Cacti.Mvc.Web
 {
     public static class DropdownGroupForExtension
     {
