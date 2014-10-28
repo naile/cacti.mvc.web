@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/naile/cacti.mvc.web/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/naile/cacti.mvc.web</projectUrl>
+    <!--<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright 2014</copyright>
+    <tags>ASP.NET MVC extensions</tags>
+	<dependencies>
+      <dependency id="Microsoft.AspNet.Mvc" version="4.0" />
+    </dependencies>
+  </metadata>
+</package>
