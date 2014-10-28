@@ -13,7 +13,6 @@ To avoid importing namespaces in your views add **Cacti.Mvc.Web** to your Views/
 ```xml
 <system.web.webPages.razor>
    <namespaces>
-      ...
       <add namespace="Cacti.Mvc.Web"/>
    </namespaces>
 </system.web.webPages.razor>
