@@ -21,6 +21,7 @@ HTML helpers
 ------------
 * DropDownGroupFor
 * DescriptionFor
+* CleanTextBoxFor
 
 Filters
 -------
