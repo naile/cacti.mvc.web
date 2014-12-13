@@ -73,6 +73,7 @@
   <ItemGroup>
     <Compile Include="Attribute\AutoRefreshAttribute.cs" />
     <Compile Include="Attribute\MaxFileSizeAttribute.cs" />
+    <Compile Include="Extension\CleanTextBoxFor.cs" />
     <Compile Include="Extension\DateTimeExtension.cs" />
     <Compile Include="Extension\DropDownGroupFor.cs" />
     <Compile Include="Extension\DescriptionFor.cs" />
