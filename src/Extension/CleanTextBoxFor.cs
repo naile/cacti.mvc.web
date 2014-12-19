@@ -16,9 +16,10 @@ namespace Cacti.Mvc.Web
                 htmlAttributes = new object();
             var dict = HtmlHelper.AnonymousObjectToHtmlAttributes(htmlAttributes);
 
-            dict.Add("spellcheck", "false");
+            dict.Add("spellcheck", "false"); //HTML version
             dict.Add("autocomplete", "off");
-            dict.Add("autocapitalize", "off");
+            dict.Add("autocorrect", "off"); //Safari version
+            dict.Add("autocapitalize", "none");
 
             return dict;
         }
