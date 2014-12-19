@@ -25,7 +25,8 @@ namespace Cacti.Mvc.Web.Test
 
             Assert.IsTrue(actualHtmlString.Contains("spellcheck=\"false\""));
             Assert.IsTrue(actualHtmlString.Contains("autocomplete=\"off\""));
-            Assert.IsTrue(actualHtmlString.Contains("autocapitalize=\"off\""));
+            Assert.IsTrue(actualHtmlString.Contains("autocorrect=\"off\""));
+            Assert.IsTrue(actualHtmlString.Contains("autocapitalize=\"none\""));
         }
 
         [TestMethod]
@@ -39,8 +40,8 @@ namespace Cacti.Mvc.Web.Test
 
             Assert.IsTrue(actualHtmlString.Contains("spellcheck=\"false\""));
             Assert.IsTrue(actualHtmlString.Contains("autocomplete=\"off\""));
-            Assert.IsTrue(actualHtmlString.Contains("autocapitalize=\"off\""));
-            Assert.IsTrue(actualHtmlString.Contains("class=\"myCustomclass\""));
+            Assert.IsTrue(actualHtmlString.Contains("autocorrect=\"off\""));
+            Assert.IsTrue(actualHtmlString.Contains("autocapitalize=\"none\""));
         }
 
         [TestMethod]
@@ -51,7 +52,8 @@ namespace Cacti.Mvc.Web.Test
 
             Assert.IsTrue(actualHtmlString.Contains("spellcheck=\"false\""));
             Assert.IsTrue(actualHtmlString.Contains("autocomplete=\"off\""));
-            Assert.IsTrue(actualHtmlString.Contains("autocapitalize=\"off\""));
+            Assert.IsTrue(actualHtmlString.Contains("autocorrect=\"off\""));
+            Assert.IsTrue(actualHtmlString.Contains("autocapitalize=\"none\""));
         }
     }
 }
